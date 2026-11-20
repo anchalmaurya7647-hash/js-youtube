@@ -39,3 +39,23 @@ console.log(typeof myFunction);
 console.log(typeof anotherId);
 console.log(typeof id);
 
+//****************************************************************** *
+// Stack(premetive)-->it does not change the original value gives copy ,Heap(non-primitive)--> it change in original value gives reference 
+// here is two type of memory 
+// 1. stack->used in primitive
+// 2. heap ->used in non-primitive/
+let myName="anchalmaurya"
+let anothername=myName
+anothername="honey"
+console.log(myName);
+console.log(anothername);
+
+let userOne={
+   email: "user@google.com",
+   upi: "user@ybl"
+}
+let userTwo=userOne
+userTwo.email="anchal@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
